@@ -1,0 +1,15 @@
+type Query{
+	user(id: ID!): User!
+	info: String!
+}
+
+type User {
+	id: ID!
+	name: String!
+	description: String!
+	profilePic: String!
+}
+
+type Mutation {
+	updatePic(id: ID!, profilePic: String!): User!
+}
